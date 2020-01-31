@@ -46,6 +46,10 @@ https://<hostname>/rudder
 
 Make sure your firewall is configured, and the allowed networks are correct.
 
+Here is how the dashboard looks.
+
+![CertTree](../pics/dash.PNG)
+
 See you in the next one.
 
 
