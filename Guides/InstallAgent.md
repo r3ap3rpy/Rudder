@@ -8,9 +8,9 @@ We are going to create a new file **/etc/yum.repos.d/rudder.repo**.
 The content of this file will be the following.
 
 ``` bash
-[Rudder_5.0]
-name=Rudder 5.0
-baseurl=http://repository.rudder.io/rpm/5.0/RHEL_7/
+[Rudder_6.0]
+name=Rudder 6.0
+baseurl=http://repository.rudder.io/rpm/6.0/RHEL_7/
 gpgcheck=1
 gpgkey=https://repository.rudder.io/rpm/rudder_rpm_key.pub
 ```
@@ -39,8 +39,11 @@ On the dasboard you should see the new agent under the **Accept new nodes** tab.
 
 
 You need to select the node and **Accept** it, after confirmation you will find the new node under the **List Nodes**.
+Once accepted we can see the new node, currently the policies are getting applied.
 
-There are two useful commands which you need to know in order to work properly with agents.
+![CertTree](../pics/agen2.PNG)
+
+There are three useful commands which you need to know in order to work properly with agents.
 
 The following command forces the agent to send their inventory to the root server.
 
@@ -52,6 +55,12 @@ The following command will force the agent to run all it's tasks.
 
 ``` bash
 rudder agent run
+```
+
+In order to get details about our agent you need to issue the following command.
+
+``` bash
+rudder agent info
 ```
 
 See you in the next one.
