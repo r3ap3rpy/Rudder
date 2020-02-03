@@ -8,9 +8,9 @@ We are going to create a new file **/etc/yum.repos.d/rudder.repo**.
 The content of this file will be the following.
 
 ``` bash
-[Rudder_6.0]
-name=Rudder 6.0
-baseurl=http://repository.rudder.io/rpm/6.0/RHEL_7/
+[Rudder_5.0]
+name=Rudder 5.0
+baseurl=http://repository.rudder.io/rpm/5.0/RHEL_7/
 gpgcheck=1
 gpgkey=https://repository.rudder.io/rpm/rudder_rpm_key.pub
 ```
@@ -18,7 +18,7 @@ gpgkey=https://repository.rudder.io/rpm/rudder_rpm_key.pub
 After saving this file we would like to install the package.
 
 ``` bash
-yum install rudder-server-root -y
+yum install rudder-agent -y
 ```
 
 Once the install is complete we need to configure our agent so that it knows where the root server is.

@@ -9,9 +9,9 @@ We are going to create a new file **/etc/yum.repos.d/rudder.repo**.
 The content of this file will be the following.
 
 ``` bash
-[Rudder_6.0]
-name=Rudder 6.0
-baseurl=http://repository.rudder.io/rpm/6.0/RHEL_$releasever/
+[Rudder_5.0]
+name=Rudder 5.0
+baseurl=http://repository.rudder.io/rpm/5.0/RHEL_7/
 gpgcheck=1
 gpgkey=https://repository.rudder.io/rpm/rudder_rpm_key.pub
 ```
