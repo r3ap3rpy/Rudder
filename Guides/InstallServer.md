@@ -5,7 +5,7 @@ This secrtion provides you with the necessary steps to setup a root server.
 You can either use the one line bootstrapper script to install the tool.
 
 ``` bash
-curl https://repository.rudder.io/tools/rudder-setup | bash -s setup-server 6.0
+curl https://repository.rudder.io/tools/rudder-setup | bash -s setup-server 5.0
 ```
 
 Or create your own repository file under **/etc/yum.repos.d/rudder.repo**.
